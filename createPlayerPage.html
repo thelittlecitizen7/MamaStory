@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <script type="text/javascript" src="mamaStory.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        
+    </head>
+    <body>
+
+        <div clas="container-fluid">
+            <div class="row bg-dark text-white" >
+                <div class="col-md-12">
+                    <ul class="menuUl">
+                        <li class="menu"><a class="active" href="#home">Create Player</a></li>
+                        <li class="menu"><a href="#news">News</a></li>
+                        <li class="menu"><a href="#contact">Contact</a></li>
+                        <li class="menu"><a href="#about">About</a></li>
+                        <li id="logOut"><a href="#about">LogOut</a></li>
+                      </ul>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="row" >
+                <div class="col-md-5 text-right" id="AllProducts">
+                    
+                    Name  : <input type="text" id="name" name="name"><br><br>
+                    
+                    <select name="gender" id="gender">
+                        <option selected disabled hidden>gender </option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                      </select>
+                      <br>
+                      <br>
+
+                    <select name="playerType" id="playerType">
+                        <option selected disabled hidden>player type</option>
+                        <option value="Fighter">Fighter</option>
+                        <option value="Magican">Magican</option>
+                        <option value="Rainbow">Rainbow</option>
+                      </select>
+                      <br>
+                      <br>
+
+
+
+
+                    <select name="weaponType" id="weaponType">
+                        <option selected disabled hidden>weapon type</option>
+                        <option value="Wand">Wand</option>
+                        <option value="TwoHandedSword">TwoHandedSword</option>
+                        <option value="TwoHandedAxe">TwoHandedAxe</option>
+                        <option value="TwoHandedBluntWeapon">TwoHandedBluntWeapon</option>
+                        <option value="Bow">Bow</option>
+                      </select>
+                      <br>
+                      <br>
+
+                    <input type="submit" value="Submit" onclick="createPlayer()">
+                </div>
+            </div>
+        </div>
+    <br>
+    <br>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+</html>
