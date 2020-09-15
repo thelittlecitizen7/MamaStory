@@ -89,30 +89,38 @@ class Player{
 
 
 class Fighter extends Player{
-
+    type;
     constructor(baseWeapon,gender,name){
+        
         super(baseWeapon,gender,name)
+        this.type = "Fighter"
     }
     Attack(){
-        return "The Fighter " + super.Attack();
+        return `The ${this.type} ` + super.Attack();
     }
 }
 
 class Magican extends Player{
+    type;
     constructor(baseWeapon,gender,name){
+        
         super(baseWeapon,gender,name)
+        this.type = "Magican"
     }
     Attack(){
-        return "The Magican " + super.Attack();
+        return `The ${this.type} ` + super.Attack();
     }
 }
 
 class Rainbow extends Player{
+    type;
     constructor(baseWeapon,gender,name){
+        
         super(baseWeapon,gender,name)
+        this.type = "Rainbow"
     }
     Attack(){
-        return "The Rainbow " + super.Attack();
+        return `The ${this.type} ` + super.Attack();
     }
 }
 
@@ -196,6 +204,7 @@ function getPlayerHtml(player){
     htmlDiv += "<div class='card-body'>"
     htmlDiv += "<h1> name : "+player.name+"</h1>"
     htmlDiv += "<h1> gender : "+player.gender+"</h1>"
+    htmlDiv += "<h1> gender : "+player.type+"</h1>"
     htmlDiv +=`<input type="button" value="create player" onClick="playerAttack('${player.Attack()}')" />`
     htmlDiv += "</div>"
     htmlDiv += "</div>"
