@@ -1,8 +1,12 @@
 <html>
     <head>
-        <script type="text/javascript" src="mamaStory.js"></script>
+        <script type="text/javascript" src="src/weapon.js"></script>
+        <script type="text/javascript" src="src/player.js"></script>
+        <script type="text/javascript" src="src/factoryModules.js"></script> 
+        <script type="text/javascript" src="src/playerHandler.js"></script>
+
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        
+        <link rel="stylesheet" type="text/css" href="css/mainPage.css"/>
     </head>
     <body>
 
@@ -10,11 +14,8 @@
             <div class="row bg-dark text-white" >
                 <div class="col-md-12">
                     <ul class="menuUl">
-                        <li class="menu"><a class="active" href="#home">Create Player</a></li>
-                        <li class="menu"><a href="#news">News</a></li>
-                        <li class="menu"><a href="#contact">Contact</a></li>
-                        <li class="menu"><a href="#about">About</a></li>
-                        <li id="logOut"><a href="#about">LogOut</a></li>
+                        <li class="menu"><a class="active" href="createPlayerPage.html">Create Player</a></li>
+                        <li class="menu"><a href="playerDetails.html">Player details</a></li>
                       </ul>
                 </div>
             </div>
@@ -42,9 +43,7 @@
                       <br>
                       <br>
 
-
-
-
+                      
                     <select name="weaponType" id="weaponType">
                         <option selected disabled hidden>weapon type</option>
                         <option value="Wand">Wand</option>
@@ -59,18 +58,6 @@
                     <input type="submit" value="Submit" onclick="createPlayer()">
                 </div>
             </div>
-
-            <div class="row" >
-                <div class="col-md-10 text-right" id="allPlayers">
-                    <!--<div class="row" >!-->
-                    <div class="col-md-4 text-right">
-                    </div>
-                <!--</div>!-->
-                </div>
-            </div>
-
-
-
         </div>
     <br>
     <br>
